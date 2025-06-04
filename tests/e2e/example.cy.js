@@ -3,6 +3,6 @@
 describe('My First Test', () => {
   it('visits the app root url', () => {
     cy.visit('/');
-    cy.contains('h1 a', 'Mesonet Timelapse Viewer');
+    cy.contains('h1 a', 'Allsky Timelapse Viewer');
   });
 });

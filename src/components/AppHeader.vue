@@ -1,7 +1,7 @@
 <template>
   <header>
     <h1>
-      <RouterLink to="/">Mesonet Timelapse Viewer</RouterLink>
+      <RouterLink to="/">Allsky Timelapse Viewer</RouterLink>
     </h1>
     <ColorModeButton class="button" />
   </header>

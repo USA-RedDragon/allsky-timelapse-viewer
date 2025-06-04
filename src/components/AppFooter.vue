@@ -2,7 +2,7 @@
   <div class="footer">
     <p>
       This project proudly open
-      <a href="https://github.com/USA-RedDragon/mesonet-timelapse-viewer" target="_blank"
+      <a href="https://github.com/USA-RedDragon/allsky-timelapse-viewer" target="_blank"
         >source</a
       >
     </p>
