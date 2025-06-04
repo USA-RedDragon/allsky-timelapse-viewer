@@ -42,11 +42,13 @@ export default {
     fetchData() {
       axios.get(`https://s3.mcswain.dev/sfro-allsky/list.txt`)
         .then(response => {
+          const newImages: string[] = [];
           for (const filename of response.data.split('\n')) {
             if (filename.trim()) {
-              this.images.unshift(`https://s3.mcswain.dev/sfro-allsky/${filename}`);
+              newImages.unshift(`https://s3.mcswain.dev/sfro-allsky/${filename}`);
             }
           }
+          this.images = newImages;
         })
         .catch(error => {
           console.error('Error fetching data:', error);
