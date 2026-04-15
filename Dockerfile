@@ -14,7 +14,7 @@ ENV VITE_APP_COMMIT=${VITE_APP_COMMIT}
 
 RUN npm run build
 
-FROM nginx:1.30.0-alpine@sha256:bf593fe2f307f7e423e44aacd870e7e327f60a41f09db349ae3d328c918a77c2
+FROM nginx:1.30.0-alpine@sha256:2e665dfdd34c48b5a4dec0cf06496743f922a27ca1339273464a3badf916c0ae
 
 COPY --chown=root:root docker/rootfs /
 COPY --from=builder /app/dist /usr/share/nginx/html
